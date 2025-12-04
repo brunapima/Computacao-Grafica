@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto CG - UNIFESP</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      canvas {
+        border: 2px solid #444;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        background-color: #000;
+        cursor: grab;
+      }
+      canvas:active {
+        cursor: grabbing;
+      }
+      #ui-controls {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        border-radius: 8px;
+        pointer-events: none;
+        border: 1px solid #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ui-controls">
+      <strong>Projeto Final - WebGL</strong><br />
+      <span style="color: #ffff00">Mouse: Girar e Zoom</span><br />
+      <span style="color: #00ffff">WASD ou Setas: Mover Personagem</span>
+    </div>
+    <canvas id="glCanvas" width="800" height="600"></canvas>
+
+    <script src="m4.js"></script>
+    <script src="character.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
 
